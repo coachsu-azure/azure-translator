@@ -3,9 +3,9 @@ from azure.ai.translation.text import TextTranslationClient, TranslatorCredentia
 from azure.ai.translation.text.models import InputTextItem
 
 # 以下資訊可以從 Azure 翻譯服務取得(正式上線時不要直接把金鑰跟服務端點寫在程式碼裡)
-REGION = '[填入區域]' # 區域
-KEY = '[填入金鑰]' # 金鑰
-ENDPOINT = '[填入服務端點]' # 服務端點
+REGION = '' # 填入位置/區域
+KEY = '' # 填入金鑰
+ENDPOINT = '' # 填入文字翻譯的 Web API
 
 app = Flask(__name__)
 
