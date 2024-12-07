@@ -1,12 +1,15 @@
 #  參考文件
 #  https://learn.microsoft.com/en-us/python/api/overview/azure/ai-translation-text-readme?view=azure-python-preview
+import os
+from dotenv import load_dotenv
 from azure.ai.translation.text import TextTranslationClient, TranslatorCredential
 from azure.ai.translation.text.models import InputTextItem
 
-# 以下資訊可以從 Azure 翻譯服務取得(正式上線時不要直接把金鑰跟服務端點寫在程式碼裡)
-REGION = '' # 填入位置/區域
-KEY = '' # 填入金鑰
-ENDPOINT = '' # 填入文字翻譯的 Web API
+# 取得環境變數
+load_dotenv()
+REGION = os.getenv('REGION')
+KEY = os.getenv('KEY')
+ENDPOINT = os.getenv('ENDPOINT')
 
 # Azure 翻譯服務參數
 SRC_LANG = "en"
