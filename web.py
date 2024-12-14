@@ -1,3 +1,6 @@
+"""
+    Azure AI 翻譯工具(網頁版)
+"""
 import os
 import pathlib
 from dotenv import load_dotenv
@@ -19,7 +22,9 @@ app = Flask(__name__)
 
 @app.route("/", methods=['GET', 'POST'])
 def translator():
-
+    """
+        Azure AI 翻譯工具(網頁版)
+    """
     src_language = "en"
     dst_language = "zh-Hant"
     input_text = ""
