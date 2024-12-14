@@ -19,7 +19,7 @@ Azure AI 翻譯工具測試範例([參考文件](https://learn.microsoft.com/en-
 # 測試 API 服務(api.py)
 1. 執行 api.py
 
-    `python api.py`
+   `python api.py`
 2. 開啟瀏覽器並前往 [http://127.0.0.1:8080/?src=en&dst=zh-Hant&text=Hello World](http://127.0.0.1:8080/?src=en&dst=zh-Hant&text=Hello%20World)
 
 # 測試網頁頁用程式(web.py)
