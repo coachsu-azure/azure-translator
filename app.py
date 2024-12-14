@@ -1,12 +1,17 @@
 #  參考文件
 #  https://learn.microsoft.com/en-us/python/api/overview/azure/ai-translation-text-readme?view=azure-python-preview
 import os
+import pathlib
 from dotenv import load_dotenv
 from azure.ai.translation.text import TextTranslationClient, TranslatorCredential
 from azure.ai.translation.text.models import InputTextItem
 
+# 如果.env存在，讀取.env檔案
+env_path = pathlib.Path(".env")
+if env_path.exists():
+    load_dotenv(dotenv_path=env_path)
+
 # 取得環境變數
-load_dotenv()
 REGION = os.getenv('REGION')
 KEY = os.getenv('KEY')
 ENDPOINT = os.getenv('ENDPOINT')
